@@ -19,7 +19,7 @@ A simple Chrome extension that estimates and visualizes the context usage (based
     *   **Option A (Zip):** Click the green "Code" button on this GitHub repository page and select "Download ZIP". Unzip the downloaded file.
     *   **Option B (Git):** Clone the repository using Git:
         ```bash
-        git clone https://github.com/YourUsername/your-repository-name.git
+        git clone https://github.com/samunderSingh12/ai-context-visualizer-chrome-extension.git
         ```
 2.  **Open Chrome Extensions:** Open Google Chrome, type `chrome://extensions` in the address bar, and press Enter.
 3.  **Enable Developer Mode:** Find the "Developer mode" toggle switch (usually in the top-right) and turn it **ON**.
