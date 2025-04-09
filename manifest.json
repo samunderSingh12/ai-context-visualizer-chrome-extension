@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "AI Context Visualizer (Configurable)", // Updated name
+  "version": "0.3.0", // Incremented version
+  "description": "Estimates context usage on AI chat sites, with user-configurable total size.",
+  "icons": {
+   
+  },
+  "permissions": [
+    "storage" // <<< Make sure this permission is here
+    // Add other permissions if needed in the future
+  ],
+  "host_permissions": [
+    "*://*.janitorai.com/*"
+    // Add other sites here if you adapt the selectors
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.janitorai.com/*"
+        // Add the same other sites here if adapting
+      ],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": { // <<< Add this section for the popup
+    "default_popup": "popup.html",
+    "default_icon": {
+       "16": "images/icon16.png", // Icon shown in the toolbar
+       "48": "images/icon48.png"
+     },
+     "default_title": "Configure AI Context Size" // Tooltip on hover
+   }
+}

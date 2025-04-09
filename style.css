@@ -1,0 +1,47 @@
+/* style.css - Basic styles for the context visualizer */
+#context-visualizer-simple {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(40, 40, 40, 0.85); /* Dark semi-transparent */
+  color: #eee; /* Light text */
+  padding: 8px 12px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  font-family: sans-serif;
+  font-size: 12px;
+  z-index: 10000; /* Try to keep it on top */
+  min-width: 180px;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#context-visualizer-simple .progress-bar-container {
+  background-color: #555; /* Dark grey background for bar */
+  border-radius: 3px;
+  overflow: hidden;
+  height: 6px;
+  margin-top: 4px;
+  margin-bottom: 2px;
+}
+
+#context-visualizer-simple .progress-bar-fill {
+  height: 100%;
+  background-color: #4CAF50; /* Green */
+  transition: width 0.3s ease-in-out; /* Smooth transition */
+}
+
+#context-visualizer-simple .progress-bar-fill.warning {
+     background-color: #ffc107; /* Amber/Yellow */
+ }
+
+#context-visualizer-simple .progress-bar-fill.danger {
+  background-color: #e53935; /* Red */
+}
+
+#context-visualizer-simple .disclaimer {
+    font-size: 9px;
+    opacity: 0.6;
+    margin-top: 3px;
+    text-align: right;
+}
